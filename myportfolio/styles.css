@@ -1,0 +1,236 @@
+/* 自定义样式 */
+
+/* 导航栏调整 */
+.navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+/* 主页头部样式 */
+header {
+    position: relative;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .bg-dark {
+    max-width: 600px;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+header a.btn {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header a.btn:hover {
+    background-color: #fff;
+    color: #0d6efd;
+}
+
+/* 时间轴样式 */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #0d6efd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 1rem 2rem;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: #0d6efd;
+    border: 4px solid #fff;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item:nth-child(even)::after {
+    left: -10px;
+}
+
+/* 个人简历和联系方式标题样式 */
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #0d6efd;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* 摄影作品轮播图 */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* 联系表单样式 */
+form .btn-primary {
+    background-color: #0d6efd;
+    border: none;
+}
+
+form .btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+/* 页脚链接样式 */
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* 相关技能图标 */
+#skills .fa {
+    transition: transform 0.3s;
+}
+
+#skills .fa:hover {
+    transform: scale(1.2);
+}
+
+/* 翻译作品列表 */
+#translations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#translations ul li {
+    padding: 10px 0;
+}
+
+#translations ul li a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+#translations ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Python项目列表 */
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projects ul li {
+    padding: 10px 0;
+}
+
+#projects ul li a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+#projects ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    header .bg-dark {
+        padding: 20px;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .timeline::after {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 25px;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item:nth-child(even)::after {
+        left: 20px;
+    }
+
+    /* 调整导航栏 */
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+    }
+
+    /* 调整时间轴 */
+    .timeline-item::after {
+        left: 20px;
+    }
+
+    /* 调整技能图标 */
+    #skills .col-md-3 {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>许丙南的个人网站</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS 动画库 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- 自定义CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">许丙南</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">关于我</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">教育经历</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">实习经历</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">相关技能</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#honors">荣誉证书</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#interests">兴趣爱好</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#translations">翻译作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Python项目</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">摄影作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">联系方式</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页头部 -->
+    <header class="bg-primary text-white text-center d-flex align-items-center" style="height: 100vh; background-image: url('images/header-background.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="bg-dark bg-opacity-50 p-5 rounded">
+                <h1 class="display-4">欢迎来到我的个人网站</h1>
+                <p class="lead">展示我的个人简历、翻译作品和摄影作品</p>
+                <a href="#about" class="btn btn-outline-light btn-lg mt-3">了解更多</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 关于我部分 -->
+    <section id="about" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="mb-4 text-center">关于我</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="images/profile.jpg" class="img-fluid rounded-circle mb-3" alt="许丙南照片" width="200">
+                </div>
+                <div class="col-md-8">
+                    <h4>许丙南</h4>
+                    <p>我是一个热爱数据分析、编程和摄影的年轻人，现居北京。拥有丰富的实习经验，擅长翻译、数据分析、SEO优化和公关工作。喜欢通过镜头捕捉生活中的美好瞬间，并通过代码解决实际问题。</p>
+                    <p><strong>电话：</strong>17398070275 | <strong>邮箱：</strong><a href="mailto:bisu520@88.com">bisu520@88.com</a></p>
+                    <p><strong>性别：</strong>男 | <strong>年龄：</strong>21 | <strong>户籍：</strong>郑州 | <strong>现所在地：</strong>北京</p>
+                    <p><strong>政治面貌：</strong>共青团员</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育经历部分 -->
+    <section id="education" class="bg-light py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="mb-4 text-center">教育经历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>北京第二外国语学院 - 金融学</h4>
+                    <span class="text-muted">2021.09 - 2025.06</span>
+                    <p>在校期间，积极参与各类学术和社团活动，培养了良好的团队协作和领导能力。</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>荥阳市高级中学</h4>
+                    <span class="text-muted">2018.09 - 2021.06</span>
+                    <p>扎实的高中教育基础，培养了逻辑思维和解决问题的能力。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 实习经历部分 -->
+    <section id="experience" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="mb-4 text-center">实习经历</h2>
+            <div class="accordion" id="accordionExperience">
+                <!-- 实习经历1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            银河互联网电视 - 内容运营
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExperience">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><strong>2022.11 - 至今</strong></li>
+                                <li>GITV官方公众号“银河电视”(100w粉丝)运营，保持影评日更，配合团队达成日均涨粉500+的目标。</li>
+                                <li>每日完善银河奇异果山东地区的教育频道、知识频道EPG维护、上线收免、推广位等内容更新。</li>
+                                <li>完成对节目单、推广位以及对应营收数据的整理与梳理，分析未来推广内容。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 实习经历2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            北京光荷文化科技有限公司 - 内容运营
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExperience">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><strong>2022.09 - 2022.11</strong></li>
+                                <li>推送营地教育活动相关内容，运行上新、星球板块，完成运营板块SOP规划。</li>
+                                <li>测试公司app、小程序、官网等产品，发现27个bug，并提出改进建议。优化官网数据埋点，SEO排名。</li>
+                                <li>收集渠道供应方信息，进行信息调查和汇总，引导入驻工作。</li>
+                                <li>组织法务、商务、运营、技术等部门协作，紧急恢复丢失的数据库，挽回136份商品数据。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 实习经历3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            南亚研究通讯 - 责任编辑
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExperience">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><strong>2021.09 - 至今</strong></li>
+                                <li>参与撰写“印度产业经济”课题，撰写印度“医生抗议”“港口罢工”“佛教外交”等相关课题；使用新闻API搜集、爬虫“印度与南海声索国互动”相关新闻。</li>
+                                <li>负责从外文媒体机构收集、翻译、编辑、创作南亚相关的新闻、评论。平均每周4篇编辑，1篇编译。</li>
+                                <li>从零开始运营微博官方账号，捕捉南亚地区热点动态。至今垂类涨粉20万，日均浏览量均值60万+。</li>
+                                <li>负责对外联络，索要素材白名单，紧急公关等事件。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 实习经历4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            校内活动与比赛
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExperience">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><strong>2022.04 - 2022.07</strong></li>
+                                <li>参与数学建模大赛国赛等建模比赛，获得国赛北京市二等奖。拥有丰富的建模经验，包括词云、新闻爬虫器、AI翻译等自制小软件，其中AI翻译工具已于GitHub开源。</li>
+                                <li>先后参与“爱心支点”“校学业发展辅导中心”“校团委”“校就业联合会”“院学生会”“翔宇东方新闻社”“益创社”等社团。</li>
+                                <li>担任“爱心支点”“校学业发展辅导中心”宣传部长，统筹校级学习相关比赛全过程，负责前期筹备、人事安排、现场布局、后期颁奖等全过程，独立设计所有参赛作品的匿名化方案，并落实。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- 相关技能部分 -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="mb-4 text-center">相关技能</h2>
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <i class="fas fa-language fa-3x text-primary mb-3"></i>
+                    <h5>翻译</h5>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <i class="fab fa-python fa-3x text-primary mb-3"></i>
+                    <h5>Python</h5>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                    <h5>数据分析</h5>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <i class="fas fa-gamepad fa-3x text-primary mb-3"></i>
+                    <h5>游戏开发</h5>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <i class="fas fa-edit fa-3x text-primary mb-3"></i>
+                    <h5>编辑</h5>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <i class="fas fa-bullhorn fa-3x text-primary mb-3"></i>
+                    <h5>公关</h5>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <i class="fas fa-search fa-3x text-primary mb-3"></i>
+                    <h5>SEO优化</h5>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <i class="fas fa-project-diagram fa-3x text-primary mb-3"></i>
+                    <h5>建模</h5>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <i class="fas fa-calendar-check fa-3x text-primary mb-3"></i>
+                    <h5>活动策划</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 荣誉证书部分 -->
+    <section id="honors" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="mb-4 text-center">荣誉证书</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>数学建模大赛</strong> - 北京市二等奖</li>
+                        <li class="list-group-item"><strong>校级计算机程序员设计大赛</strong> - 优胜奖</li>
+                        <li class="list-group-item"><strong>驻印使馆-党史知识竞赛</strong> - 三等奖</li>
+                        <li class="list-group-item"><strong>优秀共青团员</strong></li>
+                        <li class="list-group-item"><strong>校级三等奖学金</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 兴趣爱好部分 -->
+    <section id="interests" class="bg-light py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="mb-4 text-center">兴趣爱好</h2>
+            <div class="row text-center">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                    <h5>敲代码</h5>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <i class="fas fa-tree fa-3x text-primary mb-3"></i>
+                    <h5>逛公园</h5>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <i class="fas fa-plane fa-3x text-primary mb-3"></i>
+                    <h5>旅游</h5>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <i class="fas fa-chess fa-3x text-primary mb-3"></i>
+                    <h5>围棋/象棋</h5>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <i class="fas fa-gamepad fa-3x text-primary mb-3"></i>
+                    <h5>红色警戒</h5>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <i class="fas fa-volleyball-ball fa-3x text-primary mb-3"></i>
+                    <h5>志愿活动（300小时）</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 翻译作品部分 -->
+    <section id="translations" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="mb-4 text-center">翻译作品</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p>以下是我的部分翻译作品。点击链接可以查看详细内容或下载PDF文件。</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="translations/translation1.pdf" target="_blank">翻译作品1 - 印度产业经济</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="translations/translation2.pdf" target="_blank">翻译作品2 - 医生抗议</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="translations/translation3.pdf" target="_blank">翻译作品3 - 港口罢工</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="translations/translation4.pdf" target="_blank">翻译作品4 - 佛教外交</a>
+                        </li>
+                        <!-- 更多翻译作品 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Python项目部分 -->
+    <section id="projects" class="bg-light py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="mb-4 text-center">Python项目</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p>以下是我开发的一些Python项目。您可以在线尝试或查看源码。</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>AI翻译工具</strong> - <a href="https://github.com/yourusername/ai-translate" target="_blank">查看源码</a> | <a href="projects/ai-translate.html" target="_blank">在线尝试</a>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>新闻爬虫器</strong> - <a href="https://github.com/yourusername/news-crawler" target="_blank">查看源码</a> | <a href="projects/news-crawler.html" target="_blank">在线尝试</a>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>词云生成器</strong> - <a href="https://github.com/yourusername/wordcloud-generator" target="_blank">查看源码</a> | <a href="projects/wordcloud-generator.html" target="_blank">在线尝试</a>
+                        </li>
+                        <!-- 更多Python项目 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 摄影作品部分 -->
+    <section id="portfolio" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="mb-4 text-center">摄影作品</h2>
+            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <!-- 添加更多指示器 -->
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/photo1.jpg" class="d-block w-100" alt="摄影作品1" loading="lazy">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>摄影作品1</h5>
+                            <p>作品描述1</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/photo2.jpg" class="d-block w-100" alt="摄影作品2" loading="lazy">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>摄影作品2</h5>
+                            <p>作品描述2</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/photo3.jpg" class="d-block w-100" alt="摄影作品3" loading="lazy">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>摄影作品3</h5>
+                            <p>作品描述3</p>
+                        </div>
+                    </div>
+                    <!-- 添加更多轮播项 -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">上一张</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">下一张</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式部分 -->
+    <section id="contact" class="py-5">
+        <div class="container" data-aos="fade-up">
+            <h2 class="mb-4 text-center">联系方式</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4>联系信息</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope text-primary me-2"></i><strong>邮箱：</strong><a href="mailto:bisu520@88.com">bisu520@88.com</a></li>
+                        <li><i class="fas fa-phone text-primary me-2"></i><strong>电话：</strong>17398070275</li>
+                        <li><i class="fab fa-linkedin text-primary me-2"></i><strong>LinkedIn：</strong><a href="https://www.linkedin.com/in/yourprofile" target="_blank">我的LinkedIn</a></li>
+                        <li><i class="fab fa-github text-primary me-2"></i><strong>GitHub：</strong><a href="https://github.com/yourprofile" target="_blank">我的GitHub</a></li>
+                        <!-- 添加更多社交媒体链接 -->
+                    </ul>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4>发送消息</h4>
+                    <form action="https://formspree.io/f/your_form_id" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">姓名</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="您的姓名" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">邮箱</label>
+                            <input type="email" class="form-control" id="email" name="_replyto" placeholder="您的邮箱" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">消息</label>
+                            <textarea class="form-control" id="message" name="message" rows="3" placeholder="您的消息" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 许丙南的个人网站 | <a href="#" class="text-white">隐私政策</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS 和依赖 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS 动画库 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // 动画持续时间
+            once: true // 只在第一次滚动时触发动画
+        });
+    </script>
+</body>
+</html>
